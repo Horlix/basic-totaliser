@@ -539,9 +539,78 @@ hr {
   clear: both;
 }
 
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 15rem auto 12rem;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: black;
+  background-image: url("eftc-totaliser-bg-01.jpg");
+  background-size: 100% 100%;
+}
+
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  text-align: center;
+  margin: auto;
+}
+
+#logo-left,
+#logo-right {
+  width: 35%;
+  margin-bottom: 100px;
+}
+
+#logo-right {
+  float: right;
+  margin-right: 15rem;
+}
+
+#logo-left {
+  float: left;
+  margin-left: 15rem;
+}
+
+#logos {
+  margin-bottom: 5rem;
+}
+
 #totalbar {
   height: 50px;
-  background: red;
+  background: #dbc27b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 30px;
+  margin-bottom: 5rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+p {
+  margin-top: 0;
+  color: #fff !important;
+}
+
+.one.column,
+.one.columns {
+  color: #fff;
+}
+
+.ten.columns {
+  border: 3px solid #dbc27b;
+  padding: 10px;
 }
 
 /* Media Queries

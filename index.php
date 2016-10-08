@@ -3,7 +3,7 @@
 $handle = fopen("total.txt", "r");
 $current_total = fgets($handle);
 // Set your total
-$target_total = 1000;
+$target_total = 120000;
 $percent = 0;
 
 if ($current_total == ''){
@@ -35,7 +35,7 @@ fclose($handle);
 
       <div class="row">
         <div class="twelve columns">
-          <h1>We have currently raised &pound;<?= $current_total ?>!</h1>
+          <h1>We've raised &pound;<?= $current_total ?>!</h1>
         </div>
       </div>
 
@@ -44,7 +44,7 @@ fclose($handle);
           <div class="one column">
             &pound;0
           </div>
-          <div class="ten columns">
+          <div class="ten columns totalizer-box">
             <div id="totalbar" style="width:<?= $percent ?>%">&nbsp;</div>
           </div>
           <div class="one column">
@@ -52,8 +52,20 @@ fclose($handle);
           </div>
         </div>
       </div>
+      
 
     </div>
+    <div class="row">   
+        <div id="logo-left">
+          <img src="hex.png">
+        </div>
+      
+        <div id="logo-right">
+          <img src="eftc.png">
+        </div>
+    </div>
+
+    
 
  	</body>
  </html>
